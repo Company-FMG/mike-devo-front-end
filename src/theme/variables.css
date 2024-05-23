@@ -1,2 +1,14 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+
+ion-content::part(background) {
+    background: #1A23F1;
+  }
+
+  ion-page::part(background){
+        background: #1A23F1;
+       
+  }
+
+ 

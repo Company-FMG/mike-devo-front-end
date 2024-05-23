@@ -1,21 +1,21 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import NavbarMike from '../components/global/NavbarMike';
+import {IonContent, IonImg, IonPage } from '@ionic/react';
+import React from 'react';
+import slogan from '../assets/slogan.png'
+import mikelogomaior from '../assets/mikelogomaior.png'
 
 const Tab1: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <NavbarMike/>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <div className="grid  place-content-center">
-          <div className=""></div>
-          <h1>Hello, Tab 1!</h1>
-          <div className="bg-red w-8 h-8 rounded-full text-lg"></div>
-        </div>
-      </IonContent>
+    <IonPage style={{paddingTop: 100, border: 0}} >
+
+
+     <IonContent style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}} fullscreen>
+
+
+      <IonImg style={{padding: 40,height: '56%', margin:0, paddingTop: 50,  }} src={mikelogomaior}></IonImg>
+
+
+       <IonImg style={{ paddingTop: 10, height: '10%', margin: 0}} src={slogan}></IonImg>
+     </IonContent>
     </IonPage>
   );
 };
